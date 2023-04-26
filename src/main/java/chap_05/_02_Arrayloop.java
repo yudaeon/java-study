@@ -2,7 +2,7 @@ package chap_05;
 
 public class _02_Arrayloop {
     public static void main(String[] args) {
-        // 배열의 순회
+        // 배열의 순회 (1차원배열)
         String[] coffees = {"아메리카노", "카페모카", "라떼", "카푸치노"} ;
         System.out.println(coffees[0] + " 하나");
 
