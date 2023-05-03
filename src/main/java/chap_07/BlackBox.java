@@ -52,5 +52,9 @@ public class BlackBox {
         // modelName = "test"; 스테틱 클래스 메소드 내에서는 직접접근이 불가함,
 
     }
+
+     void appendModelName(String modelName ) {
+       this.modelName += modelName; //인스턴스변수와 파라미터 변수의 이름이 중복이라면 앞에 this.붙이면 됨
+    }
 }
 
