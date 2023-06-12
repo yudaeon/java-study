@@ -40,4 +40,28 @@ public class MyStack {
          //return arr[top--];로 사용할 수 있다.
         // 끝!
      }
+     //peek: 스택의 제일 위에 어떤 기능이 있는지 확인하는 기능
+    //제거 하지 않는다. : 탑의 기능을 변환시키지 않는다.
+    public int peek(){
+        // 0. 스택이 비어있지 않은지 확인
+        if (top == -1){
+            throw new RuntimeException("stack is empty");
+        }
+        return arr[top];
+    }
+    public boolean empty(){
+        return top == -1;
+    }
+
+    public static void main(String[] args) {
+        //스택에 3개의 데이터를 넣었다가 빼보자
+        MyStack intStack = new MyStack();
+        intStack.push(3);
+        intStack.push(5);
+        intStack.push(7);
+        System.out.println(intStack.pop());
+        System.out.println(intStack.pop());
+        System.out.println(intStack.empty());
+        System.out.println(intStack.peek());
+    }
 }
