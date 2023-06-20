@@ -16,13 +16,14 @@ public class MyStack {
                 throw new RuntimeException("Stack is full");
                 //return; 해도됨
             }
-        //1. top을 하나 증가시킨다.
-            top++;
-
-        //2. arr[top]에 data를 할당한다.
-            arr[top] = data;
-            //arr[++top] = data;로 쓸수 있다.
-        //push 끝!
+//        //1. top을 하나 증가시킨다.
+//            top++;
+//
+//        //2. arr[top]에 data를 할당한다.
+//            arr[top] = data;
+//            //arr[++top] = data;로 쓸수 있다.
+//        //push 끝!
+            arr[++top] = data;
 
         }
         //pop : 데이터를 스택의 제일 위에서 회수하는 메소드
